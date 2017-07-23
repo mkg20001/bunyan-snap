@@ -1,0 +1,23 @@
+name: bunyan
+version: 1.8.10
+summary: Bunyan is a simple and fast JSON logging library for node.js services
+description: |
+  Manifesto: Server logs should be structured.
+  JSON's a good format. Let's do that.
+  A log record is one line of JSON.stringify'd output.
+  Let's also specify some common names for the requisite
+  and common fields for a log record
+
+grade: stable
+confinement: strict
+
+apps:
+  bunyan:
+    command: bin/bunyan
+
+parts:
+  bunyan:
+    plugin: nodejs
+    node-engine: 8.2.1
+    node-packages:
+      - bunyan

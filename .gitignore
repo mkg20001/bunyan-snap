@@ -1,0 +1,6 @@
+#snapcraft gitignore
+parts
+stage
+prime
+*.snap
+*.tar.bz2
